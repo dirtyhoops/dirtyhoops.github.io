@@ -1,0 +1,30 @@
+body {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: $color-black;
+}
+
+// CHANGE THE MONTSERRAT LATER
+
+.heading-primary {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.heading-secondary {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+// Text in the about me section
+.text-aboutme {
+  font-size: 1.5rem;
+}
+
+// Different text colors
+.text-light-color {
+  color: $color-palette-4;
+}

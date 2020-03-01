@@ -1,0 +1,171 @@
+.about {
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--left {
+      flex: 0 0 50%;
+    }
+
+    &--right {
+      flex: 0 0 50%;
+      text-align: center;
+    }
+  }
+
+  &__info {
+    &__image {
+      height: 20rem;
+      width: 20rem;
+      margin: 0 auto;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  @include respond(phone) {
+    &__container {
+      &--left {
+        flex: 0 0 100%;
+        order: 1;
+      }
+
+      &--right {
+        flex: 0 0 100%;
+        margin-bottom: 5rem;
+      }
+    }
+
+    &__info {
+      &__image {
+        height: 18rem;
+        width: 18rem;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+// Skills
+.skills {
+  width: 80%;
+
+  &__group {
+    width: 100%;
+    margin-bottom: 1.35rem;
+  }
+
+  &__bar {
+    width: 100%;
+    background-color: $color-palette-3;
+    text-align: right;
+    position: relative;
+    height: 3rem;
+    line-height: 3rem;
+  }
+
+  &__percent {
+    height: 100%;
+    color: white;
+    background-color: $color-palette-5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+
+    &--html {
+      width: 90%;
+      animation: loadingBar-90 1.5s ease-out;
+    }
+
+    &--css {
+      width: 90%;
+      animation: loadingBar-90 1.5s ease-out;
+    }
+
+    &--javascript {
+      width: 75%;
+      animation: loadingBar-75 1.5s ease-out;
+    }
+
+    &--react {
+      width: 75%;
+      animation: loadingBar-75 1.5s ease-out;
+    }
+
+    &--angular {
+      width: 50%;
+      animation: loadingBar-50 1.5s ease-out;
+    }
+
+    &--nodejs {
+      width: 65%;
+      animation: loadingBar-65 1.5s ease-out;
+    }
+
+    &--java {
+      width: 60%;
+      animation: loadingBar-60 1.5s ease-out;
+    }
+
+    &--python {
+      width: 50%;
+      animation: loadingBar-50 1.5s ease-out;
+    }
+
+    &--mongodb {
+      width: 65%;
+      animation: loadingBar-65 1.5s ease-out;
+    }
+
+    &--restfulapi {
+      width: 70%;
+      animation: loadingBar-70 1.5s ease-out;
+    }
+
+    &--photoshop {
+      width: 55%;
+      animation: loadingBar-55 1.5s ease-out;
+    }
+  }
+
+  &__text {
+    &--name {
+      font-size: 1.2rem;
+      margin-left: 1rem;
+    }
+
+    &--percent {
+      font-size: 1.2rem;
+      margin-right: 1rem;
+    }
+  }
+
+  @include respond(phone) {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+// Quality
+.quality {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__box {
+    flex: 0 0 23%;
+    height: 25rem;
+    background-color: $color-palette-1;
+    text-align: center;
+
+    & img {
+      width: 60%;
+    }
+  }
+}

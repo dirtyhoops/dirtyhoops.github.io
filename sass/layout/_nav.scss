@@ -1,0 +1,194 @@
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  width: 100vw;
+  padding: 0 10vw;
+  color: $color-white;
+  // background: pink;
+  z-index: 999;
+
+  transition: all 0.4s ease;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+  }
+
+  &__logo {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: 800;
+  }
+
+  &__menu {
+    &__icon {
+      position: relative;
+      padding: 2.6rem 1rem;
+      cursor: pointer;
+      z-index: 1;
+      display: none;
+
+      &__line {
+        display: block;
+        position: relative;
+        background: $color-white;
+        height: 2px;
+        width: 20px;
+        border-radius: 4px;
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          border: 4px;
+          background: $color-white;
+          transition: background 0.8s ease;
+        }
+
+        &::before {
+          transform: translateY(-5px);
+        }
+
+        &::after {
+          transform: translateY(5px);
+        }
+      }
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+
+  &__links {
+    display: flex;
+    list-style: none;
+  }
+
+  &__link {
+    margin: 0.2rem;
+    padding: 1rem 2rem;
+
+    transition: opacity 0.4s ease-in-out,
+      transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:nth-of-type(2) {
+      transition-delay: 0.1s;
+    }
+
+    &:nth-of-type(3) {
+      transition-delay: 0.2s;
+    }
+
+    &:hover {
+      background: $color-palette-5;
+    }
+  }
+
+  &.scrolled {
+    height: 6rem;
+    background: $color-palette-1-darkest;
+  }
+
+  @include respond(phone) {
+    padding: 0 6vw;
+    &__menu {
+      &__icon {
+        display: block;
+
+        &__line {
+          animation: closedMid 0.8s backwards;
+          animation-direction: reverse;
+
+          &::before {
+            animation: closedTop 0.8s backwards;
+            animation-direction: reverse;
+          }
+
+          &::after {
+            animation: closedBtm 0.8s backwards;
+            animation-direction: reverse;
+          }
+        }
+      }
+
+      &__btn:checked ~ .nav__links {
+        opacity: 1;
+        clip-path: circle(100% at center);
+
+        .nav__link {
+          opacity: 1;
+          transform: translateX(0);
+          transition: opacity 0.4s ease-in-out,
+            transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+          &:nth-of-type(1) {
+            transition-delay: 0.7s;
+          }
+
+          &:nth-of-type(2) {
+            transition-delay: 0.8s;
+          }
+
+          &:nth-of-type(3) {
+            transition-delay: 0.9s;
+          }
+        }
+      }
+
+      &__btn:checked ~ .nav__menu__icon {
+        border-radius: 50%;
+        animation: pulse 1s;
+
+        .nav__menu__icon__line {
+          background: $color-white;
+          animation: openMid 0.8s forwards;
+
+          &::before {
+            background: $color-white;
+            animation: openTop 0.8s forwards;
+          }
+
+          &::after {
+            background: $color-white;
+            animation: openBtm 0.8s forwards;
+          }
+        }
+      }
+    }
+
+    &__links {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 20rem 0;
+      width: 100vw;
+      height: 100vh;
+      font-size: 3rem;
+      background: $color-palette-1-dark;
+
+      transition: opacity 0.8s 0.5s, clip-path 1s 0.5s;
+      clip-path: circle(200px at top right);
+    }
+
+    &__link {
+      opacity: 0;
+      transform: translateX(100%);
+      width: 100%;
+      text-align: center;
+
+      display: block;
+      padding: 3rem 0;
+    }
+  }
+}
