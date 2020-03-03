@@ -700,15 +700,26 @@ body {
     .nav__link:nth-of-type(3) {
       transition-delay: 0.2s; }
     .nav__link a {
-      padding: 15px 5px;
-      margin: 0 15px;
-      border-top: 3px solid transparent;
-      border-bottom: 3px solid transparent;
-      transition: 0.3s ease; }
+      padding: 8px 5px;
+      margin: 0 20px;
+      position: relative;
+      transition: all 0.5s; }
+      .nav__link a::after {
+        position: absolute;
+        content: '.';
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        color: transparent;
+        background: #ff1654;
+        height: 1px;
+        transition: all 0.5s; }
+      .nav__link a:hover::after {
+        width: 100%; }
       .nav__link a:hover {
-        border-top: 3px solid #ff1654;
-        border-bottom: 3px solid #ff1654;
-        padding: 5px 5px; }
+        color: #ff1654; }
   .nav.scrolled {
     height: 6rem;
     background: #07171e; }
