@@ -19,7 +19,11 @@
     />
 
     <!-- jquery and js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <script src="jquery/section-scroll.js"></script>
     <script src="jquery/form-control.js"></script>
 
@@ -32,22 +36,22 @@
     <!-- NAVIGATION BAR -->
     <nav class="nav">
       <div class="nav__logo">
-        <p id="link-home">DO</p>
+        <img
+          src="/img/DOlogo-white.png"
+          id="link-home"
+          class="nav__logo__image"
+          alt="logo_image"
+        />
+        <!-- <p id="link-home">DO</p> -->
       </div>
       <input type="checkbox" class="nav__menu__btn" id="nav__menu__btn" />
       <label for="nav__menu__btn" class="nav__menu__icon">
         <span class="nav__menu__icon__line"></span>
       </label>
       <ul class="nav__links">
-        <li class="nav__link" id="link-about">
-          <label for="nav__menu__btn">About</label>
-        </li>
-        <li class="nav__link" id="link-project">
-          <label for="nav__menu__btn">Projects </label>
-        </li>
-        <li class="nav__link" id="link-contact">
-          <label for="nav__menu__btn">Contact</label>
-        </li>
+        <li class="nav__link" id="link-about"><a>About</a></li>
+        <li class="nav__link" id="link-project"><a>Projects</a></li>
+        <li class="nav__link" id="link-contact"><a>Contact</a></li>
       </ul>
     </nav>
 

@@ -42,3 +42,17 @@ $(window).on('scroll', function() {
     $('.nav').removeClass('scrolled');
   }
 });
+
+// Checks the checkbox to clear the navigation menu when it's mobile
+$(document).ready(function() {
+  $('.nav__link').click(function() {
+    $('#nav__menu__btn').prop('checked', false);
+  });
+});
+
+// $(document).ready(function() {
+//   $('#button-header').on('click', function() {
+//     $path = $('#section-project').offset().top;
+//     $('html, body').animate({ scrollTop: $path }, 850);
+//   });
+// });

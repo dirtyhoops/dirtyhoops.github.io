@@ -285,7 +285,8 @@ body {
   margin-top: 2rem;
   transition: 0.2s ease;
   animation: moveInBottom-elastic 1.3s ease-out 1s;
-  animation-fill-mode: backwards; }
+  animation-fill-mode: backwards;
+  cursor: pointer; }
   .button-header:hover {
     background-color: #ff1654;
     border-color: #ff1654;
@@ -293,13 +294,8 @@ body {
   @media (max-width: 37.5em) {
     .button-header {
       padding: 1.5rem 3rem;
-      border: 2px solid #ffffff;
       color: white;
-      font-size: 2.2rem;
-      margin-top: 2rem;
-      transition: 0.2s ease;
-      animation: moveInBottom-elastic 1.3s ease-out 1s;
-      animation-fill-mode: backwards; } }
+      font-size: 2.2rem; } }
 
 .hamburger {
   padding: 4px 0 0 0;
@@ -654,14 +650,15 @@ body {
   color: #ffffff;
   z-index: 999;
   transition: all 0.4s ease; }
-  .nav a {
-    text-decoration: none;
-    color: inherit;
-    text-transform: uppercase; }
   .nav__logo {
-    font-size: 3rem;
-    letter-spacing: 1px;
-    font-weight: 800; }
+    width: 100px;
+    position: relative; }
+    .nav__logo__image {
+      width: 100%;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0; }
   .nav__menu__icon {
     position: relative;
     padding: 2.6rem 1rem;
@@ -693,21 +690,35 @@ body {
     display: flex;
     list-style: none; }
   .nav__link {
-    margin: 0.2rem;
-    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
     transition: opacity 0.4s ease-in-out, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
     .nav__link:nth-of-type(2) {
       transition-delay: 0.1s; }
     .nav__link:nth-of-type(3) {
       transition-delay: 0.2s; }
-    .nav__link:hover {
-      background: #ff1654; }
+    .nav__link a {
+      padding: 15px 5px;
+      margin: 0 15px;
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+      transition: 0.3s ease; }
+      .nav__link a:hover {
+        border-top: 3px solid #ff1654;
+        border-bottom: 3px solid #ff1654;
+        padding: 5px 5px; }
   .nav.scrolled {
     height: 6rem;
     background: #07171e; }
   @media (max-width: 37.5em) {
     .nav {
       padding: 0 6vw; }
+      .nav__logo {
+        width: 65px; }
+        .nav__logo__image {
+          width: 100%; }
       .nav__menu__icon {
         display: block; }
         .nav__menu__icon__line {
