@@ -746,6 +746,7 @@ body {
         clip-path: circle(100% at center); }
         .nav__menu__btn:checked ~ .nav__links .nav__link {
           opacity: 1;
+          font-size: 3rem;
           transform: translateX(0);
           transition: opacity 0.4s ease-in-out, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
           .nav__menu__btn:checked ~ .nav__links .nav__link:nth-of-type(1) {
@@ -774,7 +775,7 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        padding: 20rem 0;
+        padding: 15rem 0 25rem;
         width: 100vw;
         height: 100vh;
         font-size: 3rem;
