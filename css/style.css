@@ -297,6 +297,18 @@ body {
       color: white;
       font-size: 2.2rem; } }
 
+.button-modals {
+  padding: 0.8rem 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer; }
+  .button-modals--viewcode, .button-modals--viewdemo {
+    background-color: #ff1654; }
+  .button-modals--close {
+    background-color: #70c1b3;
+    color: #000000; }
+
 .hamburger {
   padding: 4px 0 0 0;
   cursor: pointer;
@@ -638,6 +650,57 @@ body {
       font-size: 3rem;
       animation: moveInRight 1.2s ease-out 0.5s;
       animation-fill-mode: backwards; }
+
+.modals {
+  height: 100vh;
+  background-color: #0e2d3b;
+  position: relative; }
+  .modals__container {
+    width: 70rem;
+    max-width: 95%;
+    height: 60rem;
+    max-height: 95%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media (max-width: 37.5em) {
+      .modals__container {
+        top: 40%; } }
+    .modals__container--top {
+      height: 60%;
+      background: red;
+      width: 100%;
+      background-image: url("/img/hypedgoods-1.png");
+      background-position: top center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-bottom: 1px solid black; }
+    .modals__container--bottom {
+      height: 40%;
+      background: #faffe7;
+      position: relative; }
+  .modals__text {
+    padding: 0.5rem 1rem; }
+    .modals__text--name {
+      font-size: 1.6rem;
+      font-weight: bold; }
+    .modals__text--desc {
+      font-size: 1.4rem; }
+  .modals__buttons {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem;
+    display: flex; }
+    .modals__buttons--left {
+      text-align: left;
+      width: 70%; }
+    .modals__buttons--right {
+      text-align: right;
+      width: 30%; }
 
 .nav {
   position: fixed;

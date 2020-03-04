@@ -32,4 +32,22 @@
       font-size: 2.2rem;
     }
   }
+
+  &-modals {
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: $color-white;
+    cursor: pointer;
+
+    &--viewcode,
+    &--viewdemo {
+      background-color: $color-palette-5;
+    }
+
+    &--close {
+      background-color: $color-palette-2;
+      color: $color-black;
+    }
+  }
 }
