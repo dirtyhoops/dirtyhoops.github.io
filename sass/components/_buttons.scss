@@ -6,6 +6,13 @@
     color: $color-white;
     border: none;
     cursor: pointer;
+    transition: 0.2s ease;
+
+    box-shadow: 2px 2px 5px rgba($color-black, 0.2);
+
+    &:hover {
+      transform: translateY(-2px);
+    }
 
     // Same as button-project but added the absolute center since it's needed for mobile view
     &-mobile-detail {
