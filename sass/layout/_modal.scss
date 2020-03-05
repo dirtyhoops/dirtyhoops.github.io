@@ -29,6 +29,8 @@
     max-height: 70%;
     @include absCenter;
     overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
 
     // This is how it looks like in the beginning, it's small and it's hidden
     opacity: 0;
@@ -77,17 +79,20 @@
     &--bottom {
       height: 40%;
       background: $color-palette-4-light;
-
       position: relative;
     }
   }
 
   &__text {
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
     height: 80%;
     &--name {
+      font-family: 'Montserrat Alternates', sans-serif;
       font-size: 2.5rem;
       font-weight: bold;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgb(214, 185, 185);
+      margin-bottom: 0.8rem;
     }
 
     &--desc {
@@ -100,7 +105,7 @@
     width: 100%;
     bottom: 0;
     left: 0;
-    padding: 0.5rem;
+    padding: 1rem;
     display: flex;
 
     &--left {
