@@ -275,6 +275,11 @@ body {
   color: #ffffff;
   border: none;
   cursor: pointer; }
+  .button-project-mobile-detail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .button-header {
   padding: 1rem 3rem;
@@ -634,7 +639,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-    z-index: 3;
+    z-index: 8;
     text-align: center;
     width: 100%; }
     @media (max-width: 37.5em) {
@@ -671,8 +676,7 @@ body {
     width: 70rem;
     max-width: 95%;
     height: 80rem;
-    max-height: 80%;
-    margin: 0 auto;
+    max-height: 70%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -709,7 +713,8 @@ body {
       background: #faffe7;
       position: relative; }
   .modal__text {
-    padding: 0.5rem 1rem; }
+    padding: 0.5rem 1rem;
+    height: 80%; }
     .modal__text--name {
       font-size: 1.6rem;
       font-weight: bold; }
@@ -744,7 +749,7 @@ body {
   width: 100vw;
   padding: 0 10vw;
   color: #ffffff;
-  z-index: 999;
+  z-index: 99;
   transition: all 0.4s ease; }
   .nav__logo {
     width: 100px;
@@ -931,6 +936,21 @@ body {
       background-image: url("/img/hoopfinder-1.png"); }
     .project__box--front-6 {
       background-image: url("/img/sqratchxchange-1.png"); }
+    .project__box--front__mobile-detail {
+      display: none; }
+      @media (max-width: 37.5em) {
+        .project__box--front__mobile-detail {
+          display: block;
+          z-index: 9;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 8rem; }
+          .project__box--front__mobile-detail--1 {
+            background-color: #247ba0; }
+          .project__box--front__mobile-detail--2 {
+            background-color: #70c1b3; } }
   .project__box--back {
     height: 100%;
     width: 100%;
@@ -959,9 +979,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%; }
-  @media (max-width: 37.5em) {
-    .project__info {
-      top: 40%; } }
   .project__info__text {
     margin-bottom: 2rem;
     animation: moveOutTop 0.4s ease-in-out; }

@@ -6,5 +6,9 @@
 9. make the contact me working
 10. animation on main headers -- Add a line or some simple design that animates with the main text header
 11. GSAP.
-12. Animate projects button
+12. Animate projects button --- maybe make the normal "LIGHT" with border and transparent button, then fill it with the color palette-5 on hover
 13. Change all the screenshot of the projects. -- make sure it's just one dimension. and also make it smaller in size. 
+
+14. for phone that is not hoverable, add a styling that shows the back of project in front with the "LEARN MORE"
+
+15. do the :visited :active on buttons

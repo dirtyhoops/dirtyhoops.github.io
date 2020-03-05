@@ -26,15 +26,18 @@
     width: 70rem;
     max-width: 95%;
     height: 80rem;
-    max-height: 80%;
-    margin: 0 auto;
+    max-height: 70%;
     @include absCenter;
     overflow: hidden;
 
-    // This is how it looks like when it starts, it's small and it's hidden
+    // This is how it looks like in the beginning, it's small and it's hidden
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.3s 0.1s; // 0.2s is the delay before the animation
+
+    @include respond(phone) {
+      top: 40%;
+    }
 
     &--top {
       height: 65%;
@@ -81,6 +84,7 @@
 
   &__text {
     padding: 0.5rem 1rem;
+    height: 80%;
     &--name {
       font-size: 1.6rem;
       font-weight: bold;

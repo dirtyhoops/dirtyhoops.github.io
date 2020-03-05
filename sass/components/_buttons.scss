@@ -6,6 +6,11 @@
     color: $color-white;
     border: none;
     cursor: pointer;
+
+    // Same as button-project but added the absolute center since it's needed for mobile view
+    &-mobile-detail {
+      @include absCenter;
+    }
   }
 
   &-header {
