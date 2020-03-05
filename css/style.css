@@ -297,15 +297,15 @@ body {
       color: white;
       font-size: 2.2rem; } }
 
-.button-modals {
+.button-modal {
   padding: 0.8rem 2rem;
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer; }
-  .button-modals--viewcode, .button-modals--viewdemo {
+  .button-modal--viewcode, .button-modal--viewsite {
     background-color: #ff1654; }
-  .button-modals--close {
+  .button-modal--close {
     background-color: #70c1b3;
     color: #000000; }
 
@@ -624,7 +624,7 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/img/heroiamge-1.jpg");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/img/heroimage-1.jpg");
   background-size: cover;
   background-position: center center;
   position: relative; }
@@ -651,56 +651,89 @@ body {
       animation: moveInRight 1.2s ease-out 0.5s;
       animation-fill-mode: backwards; }
 
-.modals {
+.modal {
   height: 100vh;
-  background-color: #0e2d3b;
-  position: relative; }
-  .modals__container {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(14, 45, 59, 0.7);
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden; }
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .modal {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(14, 45, 59, 0.7); } }
+  .modal__container {
     width: 70rem;
     max-width: 95%;
-    height: 60rem;
+    height: 80rem;
     max-height: 95%;
     margin: 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.3s 0.1s; }
     @media (max-width: 37.5em) {
-      .modals__container {
+      .modal__container {
         top: 40%; } }
-    .modals__container--top {
-      height: 60%;
-      background: red;
+    .modal__container--top {
+      height: 65%;
+      background: #247ba0;
       width: 100%;
-      background-image: url("/img/hypedgoods-1.png");
-      background-position: top center;
+      background-position: center top;
       background-size: cover;
       background-repeat: no-repeat;
       border-bottom: 1px solid black; }
-    .modals__container--bottom {
-      height: 40%;
+      .modal__container--top--hypedgoods {
+        background-image: url("/img/hypedgoods-1.png"); }
+      .modal__container--top--sqratchxchange {
+        background-image: url("/img/sqratchxchange-1.png"); }
+      .modal__container--top--firehouse {
+        background-image: url("/img/firehouse-1.png"); }
+      .modal__container--top--moviedb {
+        background-image: url("/img/moviedb-1.png"); }
+      .modal__container--top--vape3one {
+        background-image: url("/img/vape3one-1.png"); }
+      .modal__container--top--hoopfinder {
+        background-image: url("/img/hoopfinder-1.png"); }
+    .modal__container--bottom {
+      height: 35%;
       background: #faffe7;
       position: relative; }
-  .modals__text {
+  .modal__text {
     padding: 0.5rem 1rem; }
-    .modals__text--name {
+    .modal__text--name {
       font-size: 1.6rem;
       font-weight: bold; }
-    .modals__text--desc {
+    .modal__text--desc {
       font-size: 1.4rem; }
-  .modals__buttons {
+  .modal__buttons {
     position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
     padding: 0.5rem;
     display: flex; }
-    .modals__buttons--left {
+    .modal__buttons--left {
       text-align: left;
       width: 70%; }
-    .modals__buttons--right {
+    .modal__buttons--right {
       text-align: right;
       width: 30%; }
+  .modal:target {
+    opacity: 1;
+    visibility: visible; }
+  .modal:target .modal__container {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
 
 .nav {
   position: fixed;
@@ -945,16 +978,25 @@ body {
   min-height: 100vh;
   padding: 10rem 0;
   background-color: #ffffff; }
+  @media (max-width: 37.5em) {
+    .section-about {
+      padding: 6rem 0; } }
 
 .section-project {
   min-height: 100vh;
   padding: 10rem 0;
   background-color: #faffe7; }
+  @media (max-width: 37.5em) {
+    .section-project {
+      padding: 6rem 0; } }
 
 .section-contact {
   min-height: 80vh;
   padding: 10rem 0;
   background-color: #0e2d3b; }
+  @media (max-width: 37.5em) {
+    .section-contact {
+      padding: 6rem 0; } }
 
 .section-footer {
   height: 20rem;

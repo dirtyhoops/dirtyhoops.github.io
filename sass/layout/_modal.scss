@@ -1,0 +1,123 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(
+    $color-palette-1-dark,
+    0.7
+  ); // Just in case if it doesnt support the blur
+  transition: all 0.3s;
+
+  // To hide the pop up first
+  opacity: 0;
+  visibility: hidden;
+
+  @supports (-webkit-backdrop-filter: blur(10px)) or
+    (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-palette-1-dark, 0.7);
+  }
+
+  &__container {
+    width: 70rem;
+    max-width: 95%;
+    height: 80rem;
+    max-height: 95%;
+    margin: 0 auto;
+    @include absCenter;
+    overflow: hidden;
+
+    // This is how it looks like when it starts, it's small and it's hidden
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.3s 0.1s; // 0.2s is the delay before the animation
+
+    &--top {
+      height: 65%;
+      background: $color-palette-1;
+      width: 100%;
+      background-position: center top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-bottom: 1px solid black;
+
+      // different background-images
+      &--hypedgoods {
+        background-image: url('/img/hypedgoods-1.png');
+      }
+
+      &--sqratchxchange {
+        background-image: url('/img/sqratchxchange-1.png');
+      }
+
+      &--firehouse {
+        background-image: url('/img/firehouse-1.png');
+      }
+
+      &--moviedb {
+        background-image: url('/img/moviedb-1.png');
+      }
+
+      &--vape3one {
+        background-image: url('/img/vape3one-1.png');
+      }
+
+      &--hoopfinder {
+        background-image: url('/img/hoopfinder-1.png');
+      }
+    }
+
+    &--bottom {
+      height: 35%;
+      background: $color-palette-4-light;
+
+      position: relative;
+    }
+  }
+
+  &__text {
+    padding: 0.5rem 1rem;
+    &--name {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    &--desc {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__buttons {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem;
+    display: flex;
+
+    &--left {
+      text-align: left;
+      width: 70%;
+    }
+
+    &--right {
+      text-align: right;
+      width: 30%;
+    }
+  }
+
+  // This
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:target &__container {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); // transform it back to normal once the button that target's this id is hit
+  }
+}
