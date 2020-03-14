@@ -508,18 +508,6 @@ body {
       width: 100%;
       margin: 0 auto; } }
 
-.quality {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .quality__box {
-    flex: 0 0 23%;
-    height: 25rem;
-    background-color: #247ba0;
-    text-align: center; }
-    .quality__box img {
-      width: 60%; }
-
 .contact {
   color: white; }
   .contact__form__container {
@@ -1002,6 +990,21 @@ body {
 
 .button-project {
   animation: moveOutBottom 0.4s ease-in-out; }
+
+.quality {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 13rem; }
+  .quality__box {
+    flex: 0 0 23%;
+    height: 15rem;
+    text-align: center; }
+    .quality__box img {
+      width: 30%;
+      margin-bottom: 1rem; }
+  .quality__text {
+    font-size: 1.9rem; }
 
 .section-about {
   min-height: 100vh;

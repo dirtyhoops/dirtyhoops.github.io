@@ -151,21 +151,3 @@
     margin: 0 auto;
   }
 }
-
-// Quality
-.quality {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  &__box {
-    flex: 0 0 23%;
-    height: 25rem;
-    background-color: $color-palette-1;
-    text-align: center;
-
-    & img {
-      width: 60%;
-    }
-  }
-}
