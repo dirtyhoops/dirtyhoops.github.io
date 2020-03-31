@@ -995,7 +995,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 13rem; }
+  margin-top: 10rem;
+  padding: 2rem 0; }
   .quality__box {
     flex: 0 0 23%;
     height: 15rem;
@@ -1004,7 +1005,16 @@ body {
       width: 30%;
       margin-bottom: 1rem; }
   .quality__text {
-    font-size: 1.9rem; }
+    font-size: 2.2rem;
+    font-weight: bold; }
+  .quality__text2 {
+    font-size: 1.6rem; }
+  @media (max-width: 37.5em) {
+    .quality {
+      margin-top: 0rem; }
+      .quality__box {
+        flex: 0 0 49%;
+        height: 20rem; } }
 
 .section-about {
   min-height: 100vh;

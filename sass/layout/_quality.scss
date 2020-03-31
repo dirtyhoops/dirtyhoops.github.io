@@ -3,8 +3,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 13rem;
-  // background: yellow;
+  margin-top: 10rem;
+  padding: 2rem 0;
 
   &__box {
     flex: 0 0 23%;
@@ -18,6 +18,20 @@
   }
 
   &__text {
-    font-size: 1.9rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  &__text2 {
+    font-size: 1.6rem;
+  }
+
+  @include respond(phone) {
+    margin-top: 0rem;
+
+    &__box {
+      flex: 0 0 49%;
+      height: 20rem;
+    }
   }
 }
