@@ -225,8 +225,8 @@ body {
 
 .heading-primary {
   font-size: 3.5rem;
-  font-weight: 900;
-  text-transform: uppercase; }
+  font-weight: 700;
+  color: #f0c3a5; }
 
 .heading-secondary {
   font-size: 2.3rem;
@@ -537,9 +537,8 @@ body {
   color: #aaaaaa;
   position: absolute;
   font-size: 13px;
-  text-transform: uppercase;
   letter-spacing: 2px;
-  top: 0;
+  top: 4px;
   z-index: 2;
   margin: 10px;
   padding: 0 10px;
@@ -548,10 +547,11 @@ body {
 .form-input {
   width: 100%;
   font-size: 13px;
-  padding: 15px;
+  padding: 18px 15px;
   color: #ffffff;
-  background-color: #081e27;
-  border: 1px solid #b2dbbf; }
+  background-color: #1d1f31;
+  border: none;
+  border-radius: 10px; }
   .form-input:focus {
     outline: none; }
 
@@ -561,17 +561,25 @@ body {
   font-size: 13px;
   padding: 5px 10px;
   color: #ffffff;
-  background-color: #081e27;
-  border: 1px solid #b2dbbf; }
+  background-color: #1d1f31;
+  border: none;
+  border-radius: 10px; }
   .form-textarea:focus {
     outline: none; }
 
 .form-button {
   font-size: 13px;
   padding: 1.3rem;
-  text-transform: uppercase;
-  background: #b2dbbf;
-  border: 1px solid #07171e; }
+  background: #e74754;
+  border: red;
+  color: white;
+  letter-spacing: 0.5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease; }
+  .form-button:hover {
+    transform: translateY(-1px);
+    background: #f02a3b; }
 
 .active {
   top: -32px;
@@ -799,7 +807,7 @@ body {
     display: flex;
     list-style: none; }
   .nav__link {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
@@ -1045,7 +1053,7 @@ body {
 .section-contact {
   min-height: 80vh;
   padding: 10rem 0;
-  background-color: #0e2d3b; }
+  background-color: #25273d; }
   @media (max-width: 37.5em) {
     .section-contact {
       padding: 6rem 0; } }

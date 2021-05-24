@@ -31,9 +31,8 @@
   color: #aaaaaa;
   position: absolute;
   font-size: 13px;
-  text-transform: uppercase;
   letter-spacing: 2px;
-  top: 0;
+  top: 4px;
   z-index: 2;
   margin: 10px;
   padding: 0 10px;
@@ -44,10 +43,11 @@
 .form-input {
   width: 100%;
   font-size: 13px;
-  padding: 15px;
+  padding: 18px 15px;
   color: $color-white;
-  background-color: #081e27;
-  border: 1px solid $color-palette-3;
+  background-color: $color-body-2;
+  border: none;
+  border-radius: 10px;
 
   &:focus {
     outline: none;
@@ -60,8 +60,9 @@
   font-size: 13px;
   padding: 5px 10px;
   color: $color-white;
-  background-color: #081e27;
-  border: 1px solid $color-palette-3;
+  background-color: $color-body-2;
+  border: none;
+  border-radius: 10px;
 
   &:focus {
     outline: none;
@@ -71,9 +72,18 @@
 .form-button {
   font-size: 13px;
   padding: 1.3rem;
-  text-transform: uppercase;
-  background: $color-palette-3;
-  border: 1px solid $color-palette-1-darkest;
+  background: $color-body-red;
+  border: red;
+  color: white;
+  letter-spacing: 0.5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    background: #f02a3b;
+  }
 }
 
 .active {
