@@ -8,8 +8,8 @@
   },
   "author": "Daryll Osis",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^4.13.1"
-  },
-  "dependencies": {}
+  "devDependencies": {},
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
 }

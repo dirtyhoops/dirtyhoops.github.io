@@ -1,5 +1,5 @@
 .container {
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin: 0 auto;
   max-width: 1200px;
 
@@ -8,8 +8,16 @@
   //   max-width: 875px;
   // }
 
+  @include respond(tab-landscape) {
+    padding: 0 5rem !important;
+  }
+
   @include respond(tab-portrait) {
-    padding: 0 2rem;
+    padding: 0 5rem !important;
+  }
+
+  @include respond(phone) {
+    padding: 0 2.5rem !important;
   }
 }
 

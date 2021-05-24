@@ -9,7 +9,7 @@
 
     <!-- for font -->
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates:700&display=swap"
+      href="https://fonts.googleapis.com/css?Montserrat:wght@400;700;900|Montserrat+Alternates:700&display=swap"
       rel="stylesheet"
     />
 
@@ -38,379 +38,167 @@
   <body>
     <!-- NAVIGATION BAR -->
     <nav class="nav">
-      <div class="nav__logo">
-        <img
-          src="/img/DOlogo-white.png"
-          id="link-home"
-          class="nav__logo__image"
-          alt="logo_image"
-        />
-        <!-- <p id="link-home">DO</p> -->
+      <div class="nav__container container">
+        <div class="nav__logo">
+          <img
+            src="/img/DOlogo-white.png"
+            id="link-home"
+            class="nav__logo__image"
+            alt="logo_image"
+          />
+          <!-- <p id="link-home">DO</p> -->
+        </div>
+        <input type="checkbox" class="nav__menu__btn" id="nav__menu__btn" />
+        <label for="nav__menu__btn" class="nav__menu__icon">
+          <span class="nav__menu__icon__line"></span>
+        </label>
+        <ul class="nav__links">
+          <li class="nav__link" id="link-about"><a>About</a></li>
+          <li class="nav__link" id="link-project"><a>Projects</a></li>
+          <li class="nav__link" id="link-contact"><a>Contact</a></li>
+        </ul>
       </div>
-      <input type="checkbox" class="nav__menu__btn" id="nav__menu__btn" />
-      <label for="nav__menu__btn" class="nav__menu__icon">
-        <span class="nav__menu__icon__line"></span>
-      </label>
-      <ul class="nav__links">
-        <li class="nav__link" id="link-about"><a>About</a></li>
-        <li class="nav__link" id="link-project"><a>Projects</a></li>
-        <li class="nav__link" id="link-contact"><a>Contact</a></li>
-      </ul>
     </nav>
 
-    <!-- HEADER -->
-    <header class="header" id="header">
-      <div class="header__heading">
-        <h1>Hi! I'm <span>Daryll Osis</span></h1>
-        <h3>I'm a full-stack web developer</h3>
-        <button class="button-header" id="button-header">
-          View my projects
-        </button>
+    <div class="hero__wrapper">
+      <div class="hero__container container">
+        <div class="hero__container__left">
+          <div class="hero__container__left__header">
+            <p class="hero__text-name">Daryll Osis</p>
+            <p class="hero__text-title">Full-stack Developer</p>
+          </div>
+          <div class="hero__container__left__social">
+            <div class="hero__container__left__social__i">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="hero__container__left__social__i">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="hero__container__left__social__i">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="hero__container__left__social__i">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="hero__container__right">
+          <img src="/img//headerImage.svg" />
+        </div>
       </div>
-    </header>
-
-    <!-- ABOUT ME SECTION -->
-    <section class="section-about" id="section-about">
-      <div class="about container">
-        <div class="main-header">
-          <p class="heading-primary">about me</p>
-        </div>
-        <div class="about__container u-margin-bottom-lg">
-          <div class="about__container--left">
-            <div class="skills">
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--html">
-                    <p class="skills__text--name">HTML</p>
-                  </div>
-                  <p class="skills__text--percent">90%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--css">
-                    <p class="skills__text--name">CSS</p>
-                  </div>
-                  <p class="skills__text--percent">90%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--javascript">
-                    <p class="skills__text--name">JavaScript</p>
-                  </div>
-                  <p class="skills__text--percent">75%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--react">
-                    <p class="skills__text--name">React</p>
-                  </div>
-                  <p class="skills__text--percent">75%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--nodejs">
-                    <p class="skills__text--name">Node.js</p>
-                  </div>
-                  <p class="skills__text--percent">65%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--mongodb">
-                    <p class="skills__text--name">MongoDB</p>
-                  </div>
-                  <p class="skills__text--percent">65%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--angular">
-                    <p class="skills__text--name">Angular</p>
-                  </div>
-                  <p class="skills__text--percent">50%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--java">
-                    <p class="skills__text--name">Java</p>
-                  </div>
-                  <p class="skills__text--percent">60%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--python">
-                    <p class="skills__text--name">Python</p>
-                  </div>
-                  <p class="skills__text--percent">50%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--restfulapi">
-                    <p class="skills__text--name">REST API</p>
-                  </div>
-                  <p class="skills__text--percent">70%</p>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__bar">
-                  <div class="skills__percent skills__percent--photoshop">
-                    <p class="skills__text--name">Photoshop</p>
-                  </div>
-                  <p class="skills__text--percent">55%</p>
-                </div>
-              </div>
+    </div>
+    <div class="about2__wrapper">
+      <div class="about2__container container">
+        A LITTLE ABOUT ME!!!!!!!!!!!!!!!
+        <div class="about2__special container">
+          <div class="about2__special__box">
+            <p><i class="fas fa-tablet-alt"></i></p>
+            <div class="about2__special__box__header">
+              <p class="about2__text-name">Responsive Design</p>
             </div>
-          </div>
-          <div class="about__container--right">
-            <div class="about__info__image">
-              <img src="img/profilepic.jpg" alt="aboutme-profile-picture" />
-            </div>
-            <p class="heading-secondary  u-margin-top-md  u-margin-bottom-sm">
-              Who Am I?
-            </p>
-            <p class="text-aboutme">
-              A self-driven individual with a passion for developing fully
-              functional web-based applications that unveils a user-friendly
-              interface and overall a great user experience. Some of my
-              strongest attributes is my ability to translate visual and written
-              designs into efficient front-end components. In addition, my
-              capacity to reconcile to new technologies, write clearly and
-              efficiently code makes me a strong candidate as a Full Stack
-              Developer.
-            </p>
-          </div>
-        </div>
-        <!-- QUALITIES INSIDE ABOUT ME SECTION -->
-        <div class="quality">
-          <div class="quality__box">
-            <img src="/img/icon-responsive.png" alt="responsive icon" />
-            <p class="quality__text">Responsive</p>
-            <p class="quality__text2">
+            <p class="about2__text-description">
               My design will work on any devices
             </p>
           </div>
-          <div class="quality__box">
-            <img src="/img/icon-fast.png" alt="responsive icon" />
-            <p class="quality__text">Fast</p>
-            <p class="quality__text2">
+          <div class="about2__special__box">
+            <p><i class="fas fa-tachometer-alt"></i></p>
+            <div class="about2__special__box__header">
+              <p class="about2__text-name">Fast</p>
+            </div>
+            <p class="about2__text-description">
               Fast load times and lag free interaction
             </p>
           </div>
-          <div class="quality__box">
-            <img src="/img/icon-api.png" alt="responsive icon" />
-            <p class="quality__text">API</p>
-            <p class="quality__text2">
+          <div class="about2__special__box">
+            <p><i class="far fa-keyboard"></i></p>
+            <div class="about2__special__box__header">
+              <p class="about2__text-name">API</p>
+            </div>
+            <p class="about2__text-description">
               I create and design RESTful API
             </p>
           </div>
-          <div class="quality__box">
-            <img src="/img/icon-code.png" alt="responsive icon" />
-            <p class="quality__text">Clean Code</p>
-            <p class="quality__text2">
-              My code is easy to read and understand
+          <div class="about2__special__box">
+            <p><i class="fas fa-code"></i></p>
+            <div class="about2__special__box__header">
+              <p class="about2__text-name">Clean Code</p>
+            </div>
+            <p class="about2__text-description">
+              My code is easey to read and understand
             </p>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- PROJECT SECTION -->
-    <section class="section-project" id="section-project">
-      <div class="project container">
-        <div class="main-header">
-          <p class="heading-primary">projects</p>
+    </div>
+    <div class="skills__wrapper">
+      <div class="skills container">
+        <p class="skills__text-header">My Skills</p>
+        <div class="skills__grid">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-sass"></i>
+          <i class="fab fa-js-square"></i>
+          <i class="fab fa-angular"></i>
+          <i class="fab fa-react"></i>
+          <i class="fab fa-node-js"></i>
+          <i class="fab fa-python"></i>
+          <i class="fab fa-java"></i>
+          <i class="fas fa-database"></i>
         </div>
-        <div class="project__container">
-          <!-- HYPED GOODS PROJECT BOX -->
-          <div class="project__box">
-            <div class="project__box--front project__box--front-1">
-              <div
-                class="project__box--front__mobile-detail project__box--front__mobile-detail--1"
-              >
-                <button
-                  class="button-project button-project-mobile-detail"
-                  onclick="window.location.href = '#modal-hypedgoods';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
-            <div class="project__box--back project__box--back-1">
-              <div class="project__info">
-                <div class="project__info__text">
-                  <p class="project-name">Hyped Goods</p>
-                  <p class="project-stack">MERN Stack</p>
-                </div>
-                <button
-                  class="button-project"
-                  onclick="window.location.href = '#modal-hypedgoods';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
+      </div>
+    </div>
+    <div class="projects__wrapper">
+      <div class="projects container">
+        <p class="projects__text-header">My Projects</p>
+        <div class="projects__grid">
+          <div class="projects__grid__box">
+            <h4>Slingshot Connections</h4>
+            <p>MongoDB, NextJS, NodeJS</p>
           </div>
-          <!-- SQRATCH XCHANGE PROJECT BOX -->
-          <div class="project__box">
-            <div class="project__box--front project__box--front-6">
-              <div
-                class="project__box--front__mobile-detail project__box--front__mobile-detail--2"
-              >
-                <button
-                  class="button-project button-project-mobile-detail"
-                  onclick="window.location.href = '#modal-sqratchxchange';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
-            <div class="project__box--back project__box--back-2">
-              <div class="project__info">
-                <div class="project__info__text">
-                  <p class="project-name">Sqratch Xchange</p>
-                  <p class="project-stack">MERN Stack</p>
-                </div>
-                <button
-                  class="button-project"
-                  onclick="window.location.href = '#modal-sqratchxchange';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
+          <div class="projects__grid__box">
+            <h4>SSC Safety Central</h4>
+            <p>MERN Stack</p>
           </div>
-          <!-- FIREHOUSE RESTAURANT PROJECT BOX -->
-          <div class="project__box">
-            <div class="project__box--front project__box--front-2">
-              <div
-                class="project__box--front__mobile-detail project__box--front__mobile-detail--1"
-              >
-                <button
-                  class="button-project button-project-mobile-detail"
-                  onclick="window.location.href = '#modal-firehouse';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
-            <div class="project__box--back project__box--back-1">
-              <div class="project__info">
-                <div class="project__info__text">
-                  <p class="project-name">FireHouse Restaurant</p>
-                  <p class="project-stack">SASS + JQuery</p>
-                </div>
-                <button
-                  class="button-project"
-                  onclick="window.location.href = '#modal-firehouse';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
+          <div class="projects__grid__box">
+            <h4>Candidate Connections</h4>
+            <p>MERN Stack</p>
           </div>
-          <!-- THEMOVIEDB PROJECT BOX -->
-          <div class="project__box">
-            <div class="project__box--front project__box--front-3">
-              <div
-                class="project__box--front__mobile-detail project__box--front__mobile-detail--2"
-              >
-                <button
-                  class="button-project button-project-mobile-detail"
-                  onclick="window.location.href = '#modal-moviedb';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
-            <div class="project__box--back project__box--back-2">
-              <div class="project__info">
-                <div class="project__info__text">
-                  <p class="project-name">The MovieDB</p>
-                  <p class="project-stack">Node.js + React</p>
-                </div>
-                <button
-                  class="button-project"
-                  onclick="window.location.href = '#modal-moviedb';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
+          <div class="projects__grid__box">
+            <h4>Hyped Goods</h4>
+            <p>MERN Stack</p>
           </div>
-          <!-- VAPE3ONE PROJECT BOX -->
-          <div class="project__box">
-            <div class="project__box--front project__box--front-4">
-              <div
-                class="project__box--front__mobile-detail project__box--front__mobile-detail--1"
-              >
-                <button
-                  class="button-project button-project-mobile-detail"
-                  onclick="window.location.href = '#modal-vape3one';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
-            <div class="project__box--back project__box--back-1">
-              <div class="project__info">
-                <div class="project__info__text">
-                  <p class="project-name">Vape3One</p>
-                  <p class="project-stack">Java + Spring + Hibernate</p>
-                </div>
-                <button
-                  class="button-project"
-                  onclick="window.location.href = '#modal-vape3one';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
+          <div class="projects__grid__box">
+            <h4>Sqratch Xchange</h4>
+            <p>MERN Stack</p>
           </div>
-          <!-- HOOP FINDER PROJECT BOX -->
-          <div class="project__box">
-            <div class="project__box--front project__box--front-5">
-              <div
-                class="project__box--front__mobile-detail project__box--front__mobile-detail--2"
-              >
-                <button
-                  class="button-project button-project-mobile-detail"
-                  onclick="window.location.href = '#modal-hoopfinder';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
-            <div class="project__box--back project__box--back-2">
-              <div class="project__info">
-                <div class="project__info__text">
-                  <p class="project-name">Hoop Finder</p>
-                  <p class="project-stack">Python + Django + MySQL</p>
-                </div>
-                <button
-                  class="button-project"
-                  onclick="window.location.href = '#modal-hoopfinder';"
-                >
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
+          <div class="projects__grid__box">
+            <h4>Fire House</h4>
+            <p>HTML, Sass, JQuery</p>
+          </div>
+          <div class="projects__grid__box">
+            <h4>Mizu Menu</h4>
+            <p>ReactJS, Sass</p>
+          </div>
+          <div class="projects__grid__box">
+            <h4>Movie DB</h4>
+            <p>ReactJS, NodeJS</p>
+          </div>
+          <div class="projects__grid__box">
+            <h4>Vape 3 One</h4>
+            <p>Java, Spring, Hibernate</p>
+          </div>
+          <div class="projects__grid__box">
+            <h4>Hoop Finder V2</h4>
+            <p>MERN Stack</p>
           </div>
         </div>
       </div>
-    </section>
-
+    </div>
     <!-- CONTACT SECTION -->
     <section class="section-contact" id="section-contact">
       <div class="contact container">
         <div class="main-header">
-          <p class="heading-primary text-light-color">contact</p>
+          <p class="heading-primary text-light-color">contact me</p>
         </div>
         <div class="contact__form__container">
           <form
@@ -449,267 +237,6 @@
         </div>
       </div>
     </section>
-
-    <!-- JUST THE MODAL THAT POPS UP FOR PROJECTS (HypedGoods)-->
-    <div class="modal" id="modal-hypedgoods">
-      <div class="modal__container">
-        <div class="modal__container--top modal__container--top--hypedgoods">
-          <!-- <img src="/img/hypedgoods-1.png" alt="hypedgoods_image" /> -->
-        </div>
-        <div class="modal__container--bottom">
-          <div class="modal__text">
-            <p class="modal__text--name">Hyped Goods</p>
-            <p class="modal__text--desc">
-              Hyped Goods is a fully functional e-commerce website created to
-              market trendy sneakers in high demand. The webpage design
-              capitalizes on promoting a user-friendly online shopping
-              experience. Some of the administration accessibility features the
-              ability to add/remove sale products, edit products, administer
-              users, and oversee all customer orders. Users are able to browse
-              products, add products to their cart, checkout their order, and
-              see the records of their previous orders.
-            </p>
-          </div>
-          <div class="modal__buttons">
-            <div class="modal__buttons--left">
-              <button
-                class="button-modal button-modal--viewcode"
-                onclick="window.location.href = 'https://github.com/dirtyhoops/hypedgoods';"
-              >
-                View Code
-              </button>
-              <button
-                class="button-modal button-modal--viewsite"
-                onclick="window.location.href = 'https://hypedgoods-app.herokuapp.com/';"
-              >
-                View Site
-              </button>
-            </div>
-            <div class="modal__buttons--right">
-              <button
-                class="button-modal button-modal--close"
-                onclick="window.location.href = '#section-project';"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- JUST THE MODAL THAT POPS UP FOR PROJECTS (Sqratch Xchange)-->
-    <div class="modal" id="modal-sqratchxchange">
-      <div class="modal__container">
-        <div
-          class="modal__container--top modal__container--top--sqratchxchange"
-        >
-          <!-- <img src="/img/hypedgoods-1.png" alt="hypedgoods_image" /> -->
-        </div>
-        <div class="modal__container--bottom">
-          <div class="modal__text">
-            <p class="modal__text--name">Sqratch Xchange</p>
-            <p class="modal__text--desc">
-              Sqratch Xchange Website is built and designed for a thrift store
-              business to help the owner showcase their items online and to
-              bring more customers to their shop. It’s built with capability for
-              the admin to create/delete/update items. Users can also send a
-              message to the admin to inquire about any items.
-            </p>
-          </div>
-          <div class="modal__buttons">
-            <div class="modal__buttons--left">
-              <button
-                class="button-modal button-modal--viewcode"
-                onclick="window.location.href = 'https://github.com/dirtyhoops/sqratchxchange';"
-              >
-                View Code
-              </button>
-              <button
-                class="button-modal button-modal--viewsite"
-                onclick="window.location.href = 'https://hypedgoods-app.herokuapp.com/';"
-              >
-                View Site
-              </button>
-            </div>
-            <div class="modal__buttons--right">
-              <button
-                class="button-modal button-modal--close"
-                onclick="window.location.href = '#section-project';"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- JUST THE MODAL THAT POPS UP FOR PROJECTS (Fire House)-->
-    <div class="modal" id="modal-firehouse">
-      <div class="modal__container">
-        <div class="modal__container--top modal__container--top--firehouse">
-          <!-- <img src="/img/hypedgoods-1.png" alt="hypedgoods_image" /> -->
-        </div>
-        <div class="modal__container--bottom">
-          <div class="modal__text">
-            <p class="modal__text--name">Fire House Restaurant</p>
-            <p class="modal__text--desc">
-              a single-page website designed for a fictional restaurant that is
-              aesthetically pleasing that provides the user with an easy to read
-              menu. Main purpose of this project is to practice SASS.
-            </p>
-          </div>
-          <div class="modal__buttons">
-            <div class="modal__buttons--left">
-              <button
-                class="button-modal button-modal--viewcode"
-                onclick="window.location.href = 'https://github.com/dirtyhoops/restaurantSite';"
-              >
-                View Code
-              </button>
-              <button
-                class="button-modal button-modal--viewsite"
-                onclick="window.location.href = 'https://firehouse-restaurant.web.app/';"
-              >
-                View Site
-              </button>
-            </div>
-            <div class="modal__buttons--right">
-              <button
-                class="button-modal button-modal--close"
-                onclick="window.location.href = '#section-project';"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- JUST THE MODAL THAT POPS UP FOR PROJECTS (MovieDB)-->
-    <div class="modal" id="modal-moviedb">
-      <div class="modal__container">
-        <div class="modal__container--top modal__container--top--moviedb">
-          <!-- <img src="/img/hypedgoods-1.png" alt="hypedgoods_image" /> -->
-        </div>
-        <div class="modal__container--bottom">
-          <div class="modal__text">
-            <p class="modal__text--name">The MovieDB</p>
-            <p class="modal__text--desc">
-              The Movie DB is a web app that gives users the accessibility to
-              search their favorite films and discover some new movies at the
-              palm of their hands. It provides movie overview, casting
-              information, trailers, images, and movie suggestions.
-            </p>
-          </div>
-          <div class="modal__buttons">
-            <div class="modal__buttons--left">
-              <button
-                class="button-modal button-modal--viewcode"
-                onclick="window.location.href = 'https://github.com/dirtyhoops/restaurantSite';"
-              >
-                View Code
-              </button>
-              <button
-                class="button-modal button-modal--viewsite"
-                onclick="window.location.href = 'https://moviedb-27.firebaseapp.com/';"
-              >
-                View Site
-              </button>
-            </div>
-            <div class="modal__buttons--right">
-              <button
-                class="button-modal button-modal--close"
-                onclick="window.location.href = '#section-project';"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- JUST THE MODAL THAT POPS UP FOR PROJECTS (Vape3One)-->
-    <div class="modal" id="modal-vape3one">
-      <div class="modal__container">
-        <div class="modal__container--top modal__container--top--vape3one">
-          <!-- <img src="/img/hypedgoods-1.png" alt="hypedgoods_image" /> -->
-        </div>
-        <div class="modal__container--bottom">
-          <div class="modal__text">
-            <p class="modal__text--name">Vape3one E-commerce Website</p>
-            <p class="modal__text--desc">
-              Vape3one is an e-commerce website for vaping necessities. It’s
-              designed to help the business create more traffic and generate
-              more sales online.
-            </p>
-          </div>
-          <div class="modal__buttons">
-            <div class="modal__buttons--left">
-              <button
-                class="button-modal button-modal--viewcode"
-                onclick="window.location.href = 'https://github.com/dirtyhoops/vape3one';"
-              >
-                View Code
-              </button>
-            </div>
-            <div class="modal__buttons--right">
-              <button
-                class="button-modal button-modal--close"
-                onclick="window.location.href = '#section-project';"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- JUST THE MODAL THAT POPS UP FOR PROJECTS (Hoop Finder)-->
-    <div class="modal" id="modal-hoopfinder">
-      <div class="modal__container">
-        <div class="modal__container--top modal__container--top--hoopfinder">
-          <!-- <img src="/img/hypedgoods-1.png" alt="hypedgoods_image" /> -->
-        </div>
-        <div class="modal__container--bottom">
-          <div class="modal__text">
-            <p class="modal__text--name">Hoop Finder</p>
-            <p class="modal__text--desc">
-              Hoop Finder is a website that allows users to easily discover
-              nearby locations basketball courts. Users are able to leave a
-              court review and player review, which is view-able by any visitors
-              on the website. Users can add other users to be their friends. The
-              site is also built in with a check in functionality to show how
-              many users are currently playing in respective courts. Users can
-              also set events to let other users know that the court is going to
-              be busy at the set time.
-            </p>
-          </div>
-          <div class="modal__buttons">
-            <div class="modal__buttons--left">
-              <button
-                class="button-modal button-modal--viewcode"
-                onclick="window.location.href = 'https://github.com/dirtyhoops/vape3one';"
-              >
-                View Code
-              </button>
-            </div>
-            <div class="modal__buttons--right">
-              <button
-                class="button-modal button-modal--close"
-                onclick="window.location.href = '#section-project';"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- FOOTER -->
     <div class="section-footer">

@@ -1,0 +1,207 @@
+.hero {
+  &__wrapper {
+    height: 80rem;
+    width: 100%;
+    background: $color-body-1;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  &__container {
+    display: flex;
+    width: 100%;
+    @include absCenter;
+    align-items: center;
+
+    &__left {
+      flex: 0 0 50%;
+      text-align: left;
+      // background: red;
+
+      &__social {
+        margin-top: 10rem;
+        display: flex;
+
+        &__i {
+          border-radius: 50%;
+          padding: 2rem;
+          border: 2px solid $color-body-red;
+          height: 55px;
+          width: 55px;
+          margin-right: 1rem;
+          position: relative;
+          cursor: pointer;
+          transition: all 0.2s ease;
+
+          & i {
+            margin-right: 1.5rem;
+            font-size: 1.8rem;
+
+            @include absCenter;
+            color: rgb(240, 202, 202);
+          }
+
+          &:hover {
+            background: $color-body-red;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    &__right {
+      flex: 0 0 50%;
+    }
+  }
+
+  &__text {
+    &-name {
+      font-size: 6.5rem;
+      color: rgb(235, 205, 205);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: 3px;
+    }
+
+    &-title {
+      color: $color-body-red;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.about2 {
+  &__wrapper {
+    background: $color-body-2;
+    width: 100%;
+    padding: 10rem 0 0 0;
+    color: white;
+  }
+
+  &__container {
+    position: relative;
+    height: 80rem;
+  }
+
+  &__special {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    bottom: -14rem;
+    z-index: 4;
+
+    &__box {
+      flex: 0 0 23%;
+      height: 25rem;
+      background: $color-body-3;
+      padding: 4rem 2rem;
+      box-shadow: 5px 5px 10px rgba(black, 0.05);
+
+      & i {
+        font-size: 2.3rem;
+        color: $color-body-red;
+      }
+
+      &__header {
+        height: 8rem;
+      }
+    }
+  }
+
+  &__text {
+    &-name {
+      font-size: 2.3rem;
+      line-height: 1.2;
+      margin-top: 1rem;
+      font-weight: 600;
+      color: rgb(235, 205, 205);
+      // letter-spacing: 1px;
+    }
+
+    &-description {
+      font-size: 1.3rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+.skills {
+  &__wrapper {
+    width: 100%;
+    padding: 20rem 0;
+    background: $color-body-1;
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+    // background: yellow;
+    width: 100%;
+    flex-wrap: wrap;
+
+    & i {
+      color: rgb(240, 208, 208);
+      font-size: 8rem;
+      flex: 0 0 9%;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    &-header {
+      font-size: 3rem;
+      color: rgb(240, 208, 208);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.projects {
+  &__wrapper {
+    width: 100%;
+    padding: 10rem 0;
+    background: $color-body-2;
+    // height: 100rem;
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__box {
+      flex: 0 0 32%;
+      height: 25rem;
+      background: $color-body-4;
+      margin-bottom: 2rem;
+      border-radius: 15px;
+      padding: 3rem;
+
+      & h4 {
+        font-size: 1.8rem;
+        color: rgb(240, 208, 208);
+        letter-spacing: 0.35px;
+      }
+
+      & p {
+        font-size: 1.3rem;
+        color: $color-body-red;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__text {
+    &-header {
+      font-size: 3rem;
+      color: rgb(240, 208, 208);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+  }
+}
