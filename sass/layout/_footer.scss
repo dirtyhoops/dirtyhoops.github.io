@@ -22,11 +22,10 @@
     }
 
     &:hover {
-      background: $color-palette-2-light;
+      background: $color-body-red;
       transform: translateY(3px);
 
       & p {
-        color: $color-black;
         animation: moveInRotate 0.3s ease;
       }
     }
