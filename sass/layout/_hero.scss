@@ -58,14 +58,15 @@
   &__text {
     &-name {
       font-size: 6.5rem;
-      color: rgb(235, 205, 205);
+      color: #ebebeb;
       font-weight: 700;
       line-height: 1.2;
       letter-spacing: 3px;
     }
 
     &-title {
-      color: $color-body-red;
+      // color: $color-body-red;
+      color: #ffc15b;
       font-size: 2.5rem;
       font-weight: 600;
     }
@@ -117,12 +118,12 @@
       line-height: 1.2;
       margin-top: 1rem;
       font-weight: 600;
-      color: rgb(235, 205, 205);
+      color: #ebebeb;
       // letter-spacing: 1px;
     }
 
     &-description {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       line-height: 1.5;
     }
   }

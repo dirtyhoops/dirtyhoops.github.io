@@ -1106,13 +1106,13 @@ body {
 
 .hero__text-name {
   font-size: 6.5rem;
-  color: #ebcdcd;
+  color: #ebebeb;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 3px; }
 
 .hero__text-title {
-  color: #e74754;
+  color: #ffc15b;
   font-size: 2.5rem;
   font-weight: 600; }
 
@@ -1150,10 +1150,10 @@ body {
   line-height: 1.2;
   margin-top: 1rem;
   font-weight: 600;
-  color: #ebcdcd; }
+  color: #ebebeb; }
 
 .about2__text-description {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 1.5; }
 
 .skills__wrapper {
