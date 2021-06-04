@@ -1194,7 +1194,8 @@ body {
     background: #23263a;
     margin-bottom: 2rem;
     border-radius: 15px;
-    padding: 3rem; }
+    padding: 3rem;
+    position: relative; }
     .projects__grid__box h4 {
       font-size: 1.8rem;
       color: #f0d0d0;
@@ -1203,6 +1204,22 @@ body {
       font-size: 1.3rem;
       color: #e74754;
       font-weight: bold; }
+    .projects__grid__box__buttons {
+      position: absolute;
+      bottom: 3rem; }
+      .projects__grid__box__buttons button {
+        padding: 0.8rem;
+        cursor: pointer;
+        margin-right: 1rem;
+        width: 9rem;
+        background: #3b3d53;
+        border: none;
+        border-radius: 5px;
+        color: #ebdddd;
+        font-size: 1rem;
+        letter-spacing: 0.25px; }
+        .projects__grid__box__buttons button:hover {
+          background: #36374b; }
 
 .projects__text-header {
   font-size: 3rem;

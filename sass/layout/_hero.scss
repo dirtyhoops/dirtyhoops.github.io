@@ -182,6 +182,7 @@
       margin-bottom: 2rem;
       border-radius: 15px;
       padding: 3rem;
+      position: relative;
 
       & h4 {
         font-size: 1.8rem;
@@ -193,6 +194,28 @@
         font-size: 1.3rem;
         color: $color-body-red;
         font-weight: bold;
+      }
+
+      &__buttons {
+        position: absolute;
+        bottom: 3rem;
+
+        & button {
+          padding: 0.8rem;
+          cursor: pointer;
+          margin-right: 1rem;
+          width: 9rem;
+          background: #3b3d53;
+          border: none;
+          border-radius: 5px;
+          color: rgb(235, 221, 221);
+          font-size: 1rem;
+          letter-spacing: 0.25px;
+
+          &:hover {
+            background: #36374b;
+          }
+        }
       }
     }
   }
