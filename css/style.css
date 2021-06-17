@@ -912,11 +912,11 @@ body {
     background: #07171e; }
   @media (max-width: 37.5em) {
     .nav {
-      padding: 0 6vw; }
+      padding: 0 2vw; }
       .nav__logo {
-        width: 65px; }
+        width: 80px; }
         .nav__logo__image {
-          width: 100%; }
+          width: 115%; }
       .nav__menu__icon {
         display: block; }
         .nav__menu__icon__line {

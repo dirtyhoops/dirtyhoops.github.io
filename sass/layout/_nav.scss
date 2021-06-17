@@ -133,12 +133,12 @@
   }
 
   @include respond(phone) {
-    padding: 0 6vw;
+    padding: 0 2vw;
     &__logo {
-      width: 65px;
+      width: 80px;
 
       &__image {
-        width: 100%;
+        width: 115%;
       }
     }
     &__menu {
