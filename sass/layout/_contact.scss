@@ -93,3 +93,101 @@
   font-weight: 900;
   letter-spacing: 4px;
 }
+
+@include respond(phone) {
+  .contact {
+    color: white;
+
+    &__form {
+      &__container {
+        width: 95%;
+        max-width: 60rem;
+        margin: 0 auto;
+        padding: 1rem;
+        // background-color: #292a2b;
+      }
+    }
+  }
+
+  .contact-form {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    position: relative;
+    margin-bottom: 25px;
+
+    &-right {
+      margin-top: -15px;
+      text-align: right;
+    }
+  }
+
+  .form-label {
+    color: #aaaaaa;
+    position: absolute;
+    font-size: 12px;
+    letter-spacing: 2px;
+    top: 4px;
+    z-index: 2;
+    margin: 10px;
+    padding: 0 10px;
+    // background-color: $color-palette-1-dark;
+    transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
+  }
+
+  .form-input {
+    width: 100%;
+    font-size: 13px;
+    padding: 18px 15px;
+    color: $color-white;
+    background-color: $color-body-2;
+    border: none;
+    border-radius: 10px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .form-textarea {
+    width: 100%;
+    resize: none;
+    font-size: 13px;
+    padding: 5px 10px;
+    color: $color-white;
+    background-color: $color-body-2;
+    border: none;
+    border-radius: 10px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .form-button {
+    font-size: 13px;
+    padding: 1.3rem;
+    background: $color-body-red;
+    border: red;
+    color: white;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-1px);
+      background: #f02a3b;
+    }
+  }
+
+  .active {
+    top: -32px;
+    left: -15px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 4px;
+  }
+}

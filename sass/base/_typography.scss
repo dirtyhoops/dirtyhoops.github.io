@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat';
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: $default-font-size;
   line-height: 1.7;
@@ -12,6 +12,10 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   color: #f0c3a5;
+
+  @include respond(phone) {
+    font-size: 2.8rem;
+  }
 }
 
 .heading-secondary {

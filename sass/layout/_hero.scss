@@ -93,6 +93,8 @@
     justify-content: space-between;
     bottom: -14rem;
     z-index: 4;
+    right: 0;
+    left: 0;
 
     &__box {
       flex: 0 0 23%;
@@ -117,7 +119,7 @@
       font-size: 2.3rem;
       line-height: 1.2;
       margin-top: 1rem;
-      font-weight: 600;
+      font-weight: 700;
       color: #ebebeb;
       // letter-spacing: 1px;
     }
@@ -148,6 +150,11 @@
       font-size: 8rem;
       flex: 0 0 9%;
       text-align: center;
+    }
+
+    &__spacer {
+      flex: 0;
+      display: none;
     }
   }
 
@@ -227,6 +234,380 @@
       font-weight: 700;
       text-align: center;
       margin-bottom: 5rem;
+    }
+  }
+}
+
+@include respond(tab-portrait) {
+  .hero {
+    &__wrapper {
+      height: 100vh;
+    }
+
+    &__container {
+      display: flex;
+      width: 100%;
+      position: absolute;
+      top: 43%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      flex-wrap: wrap;
+
+      &__left {
+        flex: 0 0 100%;
+        text-align: center;
+        order: 2;
+
+        &__social {
+          display: flex;
+          width: 31rem;
+          margin: 10rem auto;
+          justify-content: space-between;
+
+          &__i {
+            margin-right: 0;
+          }
+        }
+      }
+
+      &__right {
+        flex: 0 0 100%;
+        order: 1;
+        text-align: center;
+
+        & img {
+          width: 90%;
+        }
+      }
+    }
+
+    &__text {
+      &-name {
+        font-size: 6rem;
+        letter-spacing: 1.5px;
+      }
+
+      &-title {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .about2 {
+    &__wrapper {
+      background: $color-body-2;
+      width: 100%;
+      padding: 10rem 0 0 0;
+      color: white;
+    }
+
+    &__container {
+      position: relative;
+      height: 60rem;
+    }
+
+    &__special {
+      position: absolute;
+      right: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      bottom: -14rem;
+      z-index: 4;
+
+      &__box {
+        flex: 0 0 23.7%;
+        height: 23rem;
+
+        padding: 3rem 2rem;
+
+        & i {
+          font-size: 2.1rem;
+        }
+
+        &__header {
+          height: 8rem;
+        }
+      }
+    }
+
+    &__text {
+      &-name {
+        font-size: 2rem;
+        line-height: 1.4;
+      }
+
+      &-description {
+        font-size: 1.4rem;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .skills {
+    &__wrapper {
+      width: 100%;
+      padding: 20rem 0 10rem 0;
+    }
+
+    &__grid {
+      & i {
+        color: rgb(240, 208, 208);
+        font-size: 5.5rem;
+        flex: 0 0 9%;
+        text-align: center;
+      }
+    }
+
+    &__text {
+      &-header {
+        font-size: 2.8rem;
+        margin-bottom: 3.5rem;
+      }
+    }
+  }
+
+  .projects {
+    &__wrapper {
+      width: 100%;
+      padding: 10rem 0;
+      background: $color-body-2;
+      // height: 100rem;
+    }
+
+    &__grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      &__box {
+        height: 22rem;
+
+        & h4 {
+          font-size: 1.6rem;
+        }
+
+        & p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    &__text {
+      &-header {
+        font-size: 2.8rem;
+        color: rgb(240, 208, 208);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}
+
+@include respond(phone) {
+  .hero {
+    &__wrapper {
+      height: 100vh;
+    }
+
+    &__container {
+      display: flex;
+      width: 100%;
+      position: absolute;
+      top: 43%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      flex-wrap: wrap;
+
+      &__left {
+        flex: 0 0 100%;
+        text-align: center;
+        order: 2;
+
+        &__social {
+          display: flex;
+          width: 31rem;
+          margin: 10rem auto;
+          justify-content: space-between;
+
+          &__i {
+            margin-right: 0;
+          }
+        }
+      }
+
+      &__right {
+        flex: 0 0 100%;
+        order: 1;
+        text-align: center;
+
+        & img {
+          width: 90%;
+        }
+      }
+    }
+
+    &__text {
+      &-name {
+        font-size: 6rem;
+        letter-spacing: 1.5px;
+      }
+
+      &-title {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .about2 {
+    &__wrapper {
+      background: $color-body-2;
+      width: 100%;
+      padding: 10rem 0 0 0;
+      color: white;
+    }
+
+    &__container {
+      position: relative;
+      height: 60rem;
+    }
+
+    &__special {
+      position: absolute;
+      right: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      bottom: -30rem;
+      z-index: 4;
+
+      flex-wrap: wrap;
+
+      &__box {
+        flex: 0 0 49%;
+        height: 23rem;
+
+        padding: 3rem 2rem;
+        margin-bottom: 2rem;
+
+        & i {
+          font-size: 2.3rem;
+        }
+
+        &__header {
+          height: 8rem;
+        }
+      }
+    }
+
+    &__text {
+      &-name {
+        font-size: 2.2rem;
+        line-height: 1.4;
+      }
+
+      &-description {
+        font-size: 1.8rem;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .skills {
+    &__wrapper {
+      width: 100%;
+      padding: 35rem 0 10rem 0;
+    }
+
+    &__grid {
+      flex-wrap: wrap;
+
+      & i {
+        color: rgb(240, 208, 208);
+        font-size: 6rem;
+        flex: 0 0 20%;
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+
+      &__spacer {
+        flex: 1;
+        display: block;
+      }
+    }
+
+    &__text {
+      &-header {
+        font-size: 2.8rem;
+        margin-bottom: 3.5rem;
+      }
+    }
+  }
+
+  .projects {
+    &__wrapper {
+      width: 100%;
+      padding: 10rem 0;
+      background: $color-body-2;
+      // height: 100rem;
+    }
+
+    &__grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      &__box {
+        height: 22rem;
+        flex: 0 0 48.5%;
+
+        & h4 {
+          font-size: 1.9rem;
+          line-height: 1.4;
+        }
+
+        & p {
+          font-size: 1.5rem;
+        }
+
+        &__buttons {
+          position: absolute;
+          bottom: 3rem;
+          left: 50%;
+          transform: translate(-50%, 0);
+
+          & button {
+            padding: 0.8rem;
+            cursor: pointer;
+            margin-right: 0;
+            margin-top: 1rem;
+            width: 14rem;
+            background: #3b3d53;
+            border: none;
+            border-radius: 5px;
+            color: rgb(235, 221, 221);
+            font-size: 1.3rem;
+            letter-spacing: 0.25px;
+
+            &:hover {
+              background: #36374b;
+            }
+          }
+        }
+      }
+    }
+
+    &__text {
+      &-header {
+        font-size: 2.8rem;
+        color: rgb(240, 208, 208);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 5rem;
+      }
     }
   }
 }
