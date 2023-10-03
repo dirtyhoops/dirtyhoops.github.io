@@ -1636,7 +1636,7 @@ body {
 }
 
 .projects__grid__box__filler {
-  flex: 0 0 1;
+  flex: 0 0 32%;
 }
 
 .projects__grid__box h4 {
